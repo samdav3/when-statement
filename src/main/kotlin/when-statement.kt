@@ -1,13 +1,10 @@
-import java.util.Scanner
-
 fun main(args: Array<String>) {
-    var int: Int? = null
-    val reader = Scanner(System.`in`)
+    var int = 0
     var numString = "x"
     print("Enter a number: ")
-    var integer:Int = reader.nextInt()
+    int = readLine()!!.toInt()
 
-    when (integer) {
+    when (int) {
         1 -> numString = "uno"
         2 -> numString = "dos"
         3 -> numString = "tres"
@@ -22,5 +19,5 @@ fun main(args: Array<String>) {
         else -> numString = "Unknown"
     }
 
-    println("The number $integer in Spanish is $numString.")
+    println("The number $int in Spanish is $numString.")
 }
